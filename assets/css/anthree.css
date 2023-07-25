@@ -1,0 +1,351 @@
+body{
+    background: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.ml4wrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.ml4 {
+    color: white;
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1em;
+}
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    opacity: 0; 
+}
+
+
+
+
+.anthree-container{
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+}
+
+.anthree-body{
+    background-color: red;
+    display: block;
+    width: 100%;
+    height: 93vh;
+    flex: 1 1 auto;
+}
+
+.anthree-left-content{
+    background-color: orange;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+.anthree-list{
+    background-color: #006272;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    float: left;
+}
+
+.anthree-room1{
+    position: relative;
+    background-color: #0197B1;
+    height: 50%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.anthree-room1-title{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    flex: 0 0 auto;
+}
+
+.anthree-room1-content{
+    position: relative;
+    padding: 20px;    
+    flex: 1 1 auto;
+}
+
+.anthree-room1-content div{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.anthree-room1-content h6{
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 2px !important;
+}
+
+.anthree-room1-content h2{
+    font-weight: 700;
+    color: yellow;
+    margin-bottom: 2px !important;
+}
+
+.anthree-room1-content h5{
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2px !important;
+}
+
+.anthree-room1-content h4{
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2px !important;
+}
+
+.anthree-header{
+    background-color: #0197B1;
+    display: block;
+    width: 100%;
+    flex: 0 1 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.anthree-header-content {
+    /* float: left; */
+    /* margin-left: 20px; */
+}
+
+.anthree-header-content h2{
+    color: white;
+    font-weight: 700;
+}
+
+.anthree-header-content h4{
+    color: white;
+}
+
+.anthree-header img {
+    /* float: left; */
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.anthree-audio{
+    background-color: black;
+    display: none;
+    width: 100%;
+    flex: 1 1 auto;
+    text-align: center;
+    z-index: 999;
+}
+
+.anthree-audio .audio-title{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: white;
+    font-weight: 700;
+}
+
+.anthree-video{
+    background-color: rgb(139, 135, 135);
+    display: block;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.anthree-video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.anthree-list-header {
+    text-align: center;
+    flex: 0 1 auto;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.list-container {
+    flex: 1 1 auto;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.list-item-group{
+    animation: list-animation 60s linear infinite;
+    transform: translate(0%,100vh);
+    font-size: 20pt;
+}
+
+@keyframes list-animation {
+    100%{
+        transform: translate(0%,-100%);
+    }
+}
+
+.anthree-list .list-item{
+    margin-bottom: 20px;
+}
+
+.anthree-list .list-item table tr, td{
+    text-align: left;
+    padding: 10px;
+}
+
+.anthree-list .list-item table{
+    width: 100%;
+}
+
+.anthree-list .list-item table tr:nth-child(even){
+    background-color: #FFFFFF;
+}
+
+.anthree-list .list-item table tr:nth-child(odd){
+    background-color: #FFFFFF;
+}
+
+.anthree-list .list-item table tr:first-child{
+    background-color: #ffffff;
+    color: black;
+}
+
+.anthree-list .list-item table tr:nth-child(2){
+    background-color: #ffffff !important;
+    font-size: 80%;
+    color: black;
+}
+
+.anthree-list .list-item-active table tr:nth-child(even){
+    background-color: #52CE47 !important;
+    color: #AAFFA2;
+    border-bottom: 2px solid #AAFFA2;
+}
+
+.anthree-list .list-item-active table tr:nth-child(odd){
+    background-color: #52CE47 !important;
+    color: #AAFFA2;
+    border-bottom: 2px solid #AAFFA2;
+}
+
+.anthree-list .list-item-active table tr:first-child{
+    background-color: #AAFFA2 !important;
+    color: #52CE47;
+    border-bottom: 2px solid #AAFFA2;
+}
+
+.anthree-footer{
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    width: 100%;
+    flex: 0 1 auto;
+    font-size: 18pt;
+    white-space: nowrap;
+}
+
+.anthree-footer .footer-header{
+    flex: 0 1 auto;
+    background-color: #006272;
+    color: white;
+    float: left;
+    padding: 5px;
+    height: 100%;
+}
+
+.anthree-footer .footer-header div{
+    display: block;
+    float: left;
+    color: white;
+    font-weight: 800;
+}
+
+.anthree-footer .footer-header img{
+    display: block;
+    float: left;
+    width: 30px;
+    left: 10px;
+}
+
+.footer-content {
+    height: 100%;
+    flex: 1 1 auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;    
+}
+
+.footer-content .content {
+    width: auto;
+    height: 100%;
+    animation: info-animation 30s linear infinite;
+    /* transform: translate(0%,100vh); */
+}
+
+@keyframes info-animation {
+    100%{
+        transform: translate(-100%,0%);
+    }
+}
+
+.clock {
+    color: yellow;
+}
+
+.intro-modal {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.intro-modal .intro-modal-button {
+    position: absolute;
+    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 700;
+    background-color: #0197B1;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.intro-modal .intro-modal-button:hover{
+    background-color: #ffffff;
+    color: #0197B1;
+}

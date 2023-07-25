@@ -1,0 +1,200 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(221, 221, 221);
+}
+
+a {
+    text-decoration: none; /* no underline */
+}
+
+.acontainer{
+    position: relative;
+    padding: 50px;
+}
+
+.aheader{
+    position: relative;
+}
+
+.aheader__image{
+    text-align: left;
+}
+
+.aheader__image img{
+    width: 300px;
+}
+
+.aheader__title{
+    margin-top: 40px;
+    text-align: left;
+}
+
+.aheader__title h2{
+    font-size: 30pt;
+    margin: 0px 0px 20px 0px;
+}
+
+.aheader__title h1{
+    font-size: 60pt;
+    margin: 0px;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.title__back span{
+    font-size: 90px;
+    color: black;
+}
+
+.title__text{
+    font-size: 60pt;
+    margin: 0px;
+}
+
+.title__text2{
+    font-size: 35pt;
+    margin: 0px;
+}
+
+.amenu{
+    margin-top: 40px;
+}
+
+.amenu p{
+    font-size: 20pt;
+}
+
+.amenu__button{
+    padding: 20px;
+    background-color: rgb(49, 170, 191);
+    color: white;
+    font-size: 25pt;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.amenu__sidang {
+    padding: 20px;
+    background-color: rgb(49, 170, 191);
+    color: white;
+    font-size: 25pt;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.sidang__nomor{
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.sidang__agenda{
+    margin-bottom: 10px;
+}
+
+.sidang__tergugat{
+    font-size: 18pt;
+}
+
+.ptsp__keperluan{
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-size: 35pt;
+}
+
+.ptsp__meja{
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+.apihak__modal{
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.803);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    top: 0px;
+}
+
+.pihak__container{
+    max-width: 70%;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pihak__container p {
+    font-size: 20pt;
+    margin: 10px 10px 15px 10px;
+    line-height: 1.5;
+}
+
+.pihak__button{
+    padding: 20px 40px 20px 40px;
+    font-size: 20pt;
+    border: 2px solid rgb(49, 170, 191);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(49, 170, 191);
+}
+
+.pihak__button--active{
+    background-color: rgb(49, 170, 191);;
+    text-align: center;
+    color: white;
+}
+
+.pihak__button--close{
+    background-color: red !important;
+    color: white;
+    border: none;
+    padding: 20px 40px 20px 40px;
+    font-size: 20pt;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.input__wa{
+    width: 100%;
+    font-size: 25pt;
+    padding: 10px;
+    border-width: thick;
+    border-color: #32aabf;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input__span{
+    margin: 10px;
+    display: block;
+    padding-right: 30px;
+}
+
+.receipt__table{
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+.price__table{
+    text-align: right;
+    width: 45%;
+}
+
